@@ -2,7 +2,7 @@ package ch01.Q1_04_Palindrome_Permutation;
 
 import java.util.Scanner;
 
-public class QuastionA {
+public class QuestionA {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine().toLowerCase();
@@ -21,7 +21,7 @@ public class QuastionA {
             if (b) {
                 moreChane++;
             }
-            if (moreChane > 2) {
+            if (moreChane > 1) {
                 System.out.println(false);
                 System.exit(0);
             }
