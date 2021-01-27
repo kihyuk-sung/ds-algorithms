@@ -1,12 +1,15 @@
+from typing import Deque
+from collections import deque
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        strs: Deque = collections.deque()
+        strs: Deque = deque()
 
         for char in s:
             if char.isalnum():
                 strs.append(char.lower())
         
-        for i in range(len(strs) // 2):
+        while len(strs) > 1:
             if strs.popleft() != strs.pop():
                 return False
         return True
