@@ -25,12 +25,13 @@ class Solution:
     
     def toReversedLinkedList(self, result: List) -> ListNode:
         prev: ListNode = None
+        node: ListNode = None
         for r in result:
             node = ListNode(r)
             node.next = prev
             prev = node
         
-        return prev
+        return node
 
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         a = self.toList(self.reverseList(l1))
