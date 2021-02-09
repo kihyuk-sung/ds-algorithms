@@ -25,3 +25,4 @@ class Solution:
         even_cursor.next = None
 
         return odd.next
+
